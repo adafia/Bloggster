@@ -32,11 +32,11 @@ class BlogShow extends Component {
     return (
       <div className='card' style={{ paddingBottom: '2rem' }}>
         <div className='card-image'>{this.renderImage()}</div>
-        <h4 class='card-title' style={{ margin: '1rem', paddingTop: '1rem' }}>
+        <h4 class='card-title' style={{ margin: '1rem', paddingTop: '1rem', fontWeight: '300' }}>
           {title}
         </h4>
         <div class='card-content'>
-          <p style={{ fontSize: '20px', margin: '2rem' }}>{content}</p>
+          <p style={{ fontSize: '20px', fontWeight: '300', margin: '2rem' }}>{content}</p>
         </div>
       </div>
     );

@@ -23,7 +23,7 @@ class BlogForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card" style={{ marginTop: '2rem', padding: '2rem' }}>
         <form onSubmit={this.props.handleSubmit(this.props.onBlogSubmit)}>
           {this.renderFields()}
           <Link to="/blogs" className="red btn-flat white-text">

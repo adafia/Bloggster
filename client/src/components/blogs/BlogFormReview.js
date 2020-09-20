@@ -14,7 +14,7 @@ class BlogFormReview extends Component {
 
     return _.map(formFields, ({ name, label }) => {
       return (
-        <div key={name}>
+        <div key={name} style={{ marginBottom: '2rem'}}>
           <label>{label}</label>
           <div>{formValues[name]}</div>
         </div>
@@ -26,7 +26,7 @@ class BlogFormReview extends Component {
     const { onCancel } = this.props;
 
     return (
-      <div>
+      <div style={{ marginTop: '2rem'}}>
         <button
           className='yellow darken-3 white-text btn-flat'
           onClick={onCancel}
@@ -56,7 +56,7 @@ class BlogFormReview extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit.bind(this)}>
+      <form className="card" style={{ marginTop: '2rem', padding: '2rem' }} onSubmit={this.onSubmit.bind(this)}>
         <h5>Please confirm your entries</h5>
         {this.renderFields()}
         <h5>Add an image</h5>

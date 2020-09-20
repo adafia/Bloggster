@@ -9,16 +9,16 @@ class Header extends Component {
         return;
       case false:
         return (
-          <li>
-            <a href={'/auth/google'}>Login With Google</a>
+          <li style={{ fontWeight: '300' }}>
+            <a href={'/auth/google'}>Login</a>
           </li>
         );
       default:
         return [
-          <li key='3' style={{ margin: '0 10px' }}>
+          <li key='3' style={{ margin: '0 10px', fontWeight: '300' }}>
             <Link to='/blogs'>My Blogs</Link>
           </li>,
-          <li key='2'>
+          <li key='2' style={{ fontWeight: '300' }}>
             <a href={'/auth/logout'}>Logout</a>
           </li>,
         ];
@@ -32,7 +32,7 @@ class Header extends Component {
           <Link
             to={this.props.auth ? '/blogs' : '/'}
             className='left brand-logo'
-            style={{ marginLeft: '1rem' }}
+            style={{ marginLeft: '1rem', fontWeight: '300' }}
           >
             Bloggster
           </Link>
