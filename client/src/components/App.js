@@ -6,6 +6,7 @@ import * as actions from '../actions';
 import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
+import Upload from './Upload';
 import BlogNew from './blogs/BlogNew';
 import BlogShow from './blogs/BlogShow';
 
@@ -24,6 +25,7 @@ class App extends Component {
               <Route path="/blogs/new" component={BlogNew} />
               <Route exact path="/blogs/:_id" component={BlogShow} />
               <Route path="/blogs" component={Dashboard} />
+              <Route path="/upload" component={Upload} />
               <Route path="/" component={Landing} />
             </Switch>
           </div>

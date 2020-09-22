@@ -27,6 +27,7 @@ app.use(passport.session());
 require('./routes/authRoutes')(app);
 require('./routes/blogRoutes')(app);
 require('./routes/uploadRoutes')(app);
+require('./routes/uploadVideo')(app);
 
 if (['production'].includes(process.env.NODE_ENV)) {
   app.use(express.static('client/build'));
