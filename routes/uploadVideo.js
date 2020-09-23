@@ -23,7 +23,6 @@ module.exports = app => {
 
       return new Promise((resolve, reject) =>
         s3.createMultipartUpload(params, (err, uploadData) => {
-          console.log('::::::::::',uploadData)
           if (err) {
             reject(err);
           } else {
@@ -83,6 +82,7 @@ module.exports = app => {
           if (err) {
             reject(err);
           } else {
+            console.log(':::::::::::>>>>',data)
             resolve(res.send({ data }));
           }
         })
